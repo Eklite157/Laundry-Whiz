@@ -3,7 +3,7 @@ import { useState } from 'react';
 import LaundryCard from "@/components/LaundryCard";
 
 export default function Home() {
-  const laundry_time = 90;
+  const laundry_time = 10;
   const [in_use, set_in_use] = useState("no");
   let [timer, set_timer] = useState(laundry_time);
 
@@ -19,12 +19,12 @@ export default function Home() {
 
   function startTimer() {
     setInterval(() => {
-      if (timer > laundry_time) {
+      if (timer > 0) {
         console.log("timer > 89 timer is", timer);
         set_timer(timer--);
       } else {
         console.log("timer < 89 timer is", timer);
-        set_timer(timer--);
+        set_timer(0);
       }
     }, 1000);
   }
