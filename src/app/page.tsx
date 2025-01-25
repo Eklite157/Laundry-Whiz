@@ -6,16 +6,16 @@ import "./css/laundryroom.css"
 
 export default function Home() {
   const laundry_time = 5;
-  const [in_use, set_in_use] = useState("no");
+  const [in_use, set_in_use] = useState("Available");
   let [timer, set_timer] = useState(laundry_time);
 
   function handleClick() {
-    if (in_use == "no") {
-      set_in_use("yes");
+    if (in_use == "Available") {
+      set_in_use("In Use");
       set_timer(laundry_time);
       startTimer();
     } else {
-      set_in_use("no");
+      set_in_use("Available");
     }
   }
 
@@ -26,7 +26,7 @@ export default function Home() {
         set_timer(timer--);
       } else {
         console.log("timer < 89 timer is", timer);
-        set_timer(laundry_time);
+        set_timer(0);
       }
     }, 1000);
   }
@@ -34,11 +34,12 @@ export default function Home() {
 
   return (
     <>
-    <div>
 
     <h1> Laundry Room </h1>
 
     <button onClick={handleClick}>this machine is in use: {in_use}</button>
+    <button onClick={handleClick}>{in_use}</button>
+
     <p>there are {timer} seconds left</p>
 
   
@@ -61,8 +62,6 @@ export default function Home() {
     <LaundryCard />
     <LaundryCard />
     <LaundryCard />
-
-    </div>
 
     </div>
     </>)
