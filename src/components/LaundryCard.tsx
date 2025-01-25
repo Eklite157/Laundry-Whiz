@@ -1,4 +1,6 @@
 export default function LaundryCard() {
-    return <div>Hello from Laundry Card</div>
+    return <div>
+        <img src="/images/LaundryMachine.png" width={300} height={200}/>
+        Laundry Machine</div>
 }
 

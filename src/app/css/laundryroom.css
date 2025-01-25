@@ -1,0 +1,23 @@
+h1{
+    font-size:50px;
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+
+.laundry-container {
+    display: grid;                          
+    grid-template-columns: repeat(2, 1fr);    
+    gap: 20px;                              
+    padding: 20px;
+    width: 100%;                              
+  }
+  
+
+  .laundry-machine {                         
+    background-color: #f0f0f0;
+    display: flex;                           
+    border-radius: 8px;
+    justify-content: center;            
+    align-items: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
