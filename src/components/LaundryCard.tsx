@@ -24,7 +24,7 @@ export default function LaundryCard() {
         //console.log(timer);
         set_timer(timer--);
       } else {
-        //console.log("timer <= -1", timer);
+        //console.log("timer <= -1", timer); 
         set_in_use("Available");
         set_timer(laundry_time);
         clearInterval(myTimer);
