@@ -16,7 +16,6 @@ export default function LaundryCard() {
     }
   }
 
-
   //start timer for specific machine 
 
   function startTimer() {
@@ -27,6 +26,7 @@ export default function LaundryCard() {
       } else {
         console.log("timer < 89 timer is", timer);
         set_timer(0);
+        set_in_use("Available");
       }
     }, 1000);
   }
