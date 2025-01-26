@@ -21,7 +21,7 @@ export default function Home() {
 
 
   //start timer for specific machine 
-  
+
   function startTimer() {
     setInterval(() => {
       if (timer > 0) {
