@@ -40,9 +40,9 @@ export default function Home() {
 
     <h1> Laundry Room </h1>
 
-    <button onClick={handleClick}>{in_use}</button>
+    <button className="btn" onClick={handleClick}>{in_use}</button>
 
-    <p>there are {timer} seconds left</p>
+    <p className="timer-notice">there are {timer} seconds left</p>
 
   
     <div className="laundry-container">

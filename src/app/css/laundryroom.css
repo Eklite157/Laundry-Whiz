@@ -11,4 +11,20 @@ h1{
     padding: 20px;
     width: 100%;                              
   }
+
+.btn{
+    border-color:black;
+    border-radius:4px;
+    background-color:lightblue;
+    color:black;
+    border-width: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left:20px;
+}
+
+.timer-notice{
+    margin-top:20px;
+    margin-left:20px;
+}
   
