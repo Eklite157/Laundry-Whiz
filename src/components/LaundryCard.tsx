@@ -19,14 +19,16 @@ export default function LaundryCard() {
   //start timer for specific machine 
 
   function startTimer() {
-    setInterval(() => {
-      if (timer > 0) {
-        console.log("timer > 89 timer is", timer);
+    var myTimer = setInterval(() => {
+      if (timer > -1) {
+        //console.log(timer);
         set_timer(timer--);
       } else {
-        console.log("timer < 89 timer is", timer);
-        set_timer(0);
+        //console.log("timer <= -1", timer);
         set_in_use("Available");
+        set_timer(laundry_time);
+        //clearInterval(1000);
+        clearInterval(myTimer);
       }
     }, 1000);
   }
