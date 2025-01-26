@@ -4,6 +4,12 @@ h1{
     text-align: center;
 }
 
+p1 {
+    font-size:25;
+    font-family: "Comic Sans MS";
+    text-align: center;    
+}
+
 .laundry-room {
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));        
