@@ -29,11 +29,11 @@ export default function LaundryCard() {
           }, 1000);
         }
 
-    return <div>
+    return <div className="laundry-machine">
         Laundry Machine
         <img src="/images/LaundryMachine.png" width={300} height={200}/>
         <button className="btn" onClick={handleClick}>{in_use}</button>
-        <figcaption className="timer-notice">there are {timer} seconds left</figcaption>
+        <figcaption className="timer-notice">There are {timer} seconds left</figcaption>
         </div>}
 
 

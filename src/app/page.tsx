@@ -11,7 +11,7 @@ export default function Home() {
     <h1> Laundry Room </h1>
 
   
-    <div className="laundry-container">
+    <div className="laundry-room">
     <LaundryCard />
     <LaundryCard />
     <LaundryCard />

@@ -4,13 +4,18 @@ h1{
     text-align: center;
 }
 
-.laundry-container {
+.laundry-room {
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));        
     gap: 20px;                              
     padding: 20px;
     width: 100%;                              
   }
+
+.laundry-machine{
+    text-align: center;
+    font-family:"Comic Sans MS";
+}
 
 .btn{
     border-color:black;
