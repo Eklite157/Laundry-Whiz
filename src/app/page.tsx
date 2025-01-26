@@ -40,7 +40,6 @@ export default function Home() {
 
     <h1> Laundry Room </h1>
 
-    <button onClick={handleClick}>this machine is in use: {in_use}</button>
     <button onClick={handleClick}>{in_use}</button>
 
     <p>there are {timer} seconds left</p>
